@@ -1,0 +1,121 @@
+/* --- Featured Grid --- */
+
+.featured {
+    padding:var(--sp-xlrg);
+    max-width: 1650px;
+    margin: 0 auto;
+}
+
+.featuredGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--sp-lrg);
+    margin: 0 auto;
+    align-items: start;
+}
+
+.article-link {
+     display: block;
+     height: 100%;
+}
+
+.featuredContainer {
+     height: 100%;
+}
+
+/* --- Hero --- */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: var(--sp-lrg);
+    padding: var(--sp-xlrg);
+    max-width: 1650px;
+    margin: 0 auto;
+}
+
+.heroArticleLink {
+    display: block;
+}
+
+.heroArticle {
+    position: relative;
+    border-radius: var(--radius-med);
+    overflow: hidden;
+    background: var(--color-dark);
+}
+
+.heroArticleImageContainer {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.heroArticleImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease, opacity var(--ease);
+}
+.heroArticle:hover .heroArticleImage {
+    transform: scale(1.03);
+}
+
+.heroArticleData {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--sp-lrg);
+    padding-top: 56px;
+    background: var(--color-accent);
+    clip-path: polygon(0% 30%, 100% 10%, 100% 100%, 0% 100%);
+    padding-top: 48px;
+    transition: clip-path 300ms ease;
+}
+
+.heroArticle:hover .heroArticleData {
+    clip-path: polygon(0% 10%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.heroArticleHeader {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-dark);
+    line-height: 1.1;
+    margin-top: auto;
+}
+
+/* --- LOGIN --- */
+
+.hero .form-container {
+    flex: 1;
+}
+
+/* --- RESPONSIVITY --- */
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: var(--sp-med);
+        gap: var(--sp-med);
+    }
+
+    .hero .form-container {
+        flex: none;
+    }
+
+    .heroArticleHeader {
+        font-size: 1.5rem;
+    }
+
+    .featured {
+        padding: var(--sp-med);
+    }
+
+    .featuredGrid{
+        grid-template-columns: 1fr;
+        gap: var(--sp-med);
+    }
+}

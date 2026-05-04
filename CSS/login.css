@@ -1,0 +1,45 @@
+/* --- LOGIN PAGE --- */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 560px;
+    padding: var(--sp-xlrg) var(--sp-med);
+}
+
+.form-wrapper .form-container {
+    padding: var(--sp-xlrg) 60px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-med)
+}
+
+.form-group > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- RESPOBSIVITY --- */
+
+@media (max-width: 768px){
+    .form-wrapper{
+        padding: var(--sp-med);
+    }
+
+    .form-wrapper .form-container{
+        padding: var(--sp-xlrg) var(--sp-lrg);
+    }
+
+    .form-container .navBarRegister {
+        display: block;
+        text-align: center;
+    }
+}

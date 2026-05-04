@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/general.css">
+  <link rel="stylesheet" href="/CSS/article.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Deluxe - Home</title>
+</head>
+
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="navBar">
+
+        <div class="navBarLeftSec">
+          <button class="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.1 2.85c.34-.68-.36-1.39-1.05-1.11C6.83 3.46 4 7.6 4 12.2 4 17.63 8.37 22 13.8 22c4.6 0 8.74-2.83 10.46-7.05.28-.69-.43-1.39-1.11-1.05-1.13.56-2.4.88-3.75.88-4.65 0-8.42-3.77-8.42-8.42 0-1.35.32-2.62.88-3.75z"></path>
+            </svg>
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM11 1h2v4h-2V1zM11 19h2v4h-2v-4zM1 11h4v2H1v-2zM19 11h4v2h-4v-2zM4.22 2.81l2.83 2.83-1.41 1.41-2.83-2.83 1.41-1.41zM18.36 16.95l2.83 2.83-1.41 1.41-2.83-2.83 1.41-1.41zM19.78 2.81l1.41 1.41-2.83 2.83-1.41-1.41 2.83-2.83zM5.64 16.95l1.41 1.41-2.83 2.83-1.41-1.41 2.83-2.83z"></path>
+            </svg>
+          </button>
+          <a href="Homepage.html" style="text-decoration: none;">
+            <h1 class="navBarLogo">
+              TEAM47<br><span>SPORTS</span>
+            </h1>
+          </a>
+          <input class="navBarSearch" type="text" placeholder="Search for Articles...">
+        </div>
+
+        <div class="navBarRightSec">
+          <div class="navBarButtons">
+            <a href="contact-us.html">
+                <button class="navBarButton">
+                Contact Us
+                </button>
+            </a>
+
+            <a href="login.html">
+                <button class="navBarButton">
+                Login
+                </button>
+            </a>
+          </div>
+          <p class="navBarRegister">Don't have an account?
+            <a href="register.html">Register</a>
+          </p>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+        <div class="articleFlex">
+            <h1 class="articleTitle"></h1>
+            <p class="articleDescription"></p>
+            <p class="articleDate"></p>
+            <img class="articleImage" src="" alt="">
+            <pre class="articleContent"></pre>
+        </div>
+        <section class="articleRecommendations">
+          <div class="featuredFlex"></div>
+        </section>
+    </article>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="scripts/articles.js"></script>
+  <script src="scripts/auth.js"></script>
+  <script>
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    }
+
+    initAuthNav();
+    initArticleSearch();
+    renderArticlePage();
+  </script>
+</body>
+</html>

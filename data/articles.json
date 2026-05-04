@@ -1,0 +1,74 @@
+[
+  {
+    "id": "littler-rotterdam-boos",
+    "title": "Littler shrugs off Liverpool boos and criticises Rotterdam fans",
+    "articleTitle": "Luke Littler shrugs off boos at Premier League in Liverpool: Reaction in Rotterdam the 'worst I have experienced'",
+    "description": "Luke Littler says he does not regret what happened with Gian van Veen but believes they have both moved on; He says the boos in Rotterdam were the worst he has experienced; you can watch Premier League Darts live on Sky Sports every Thursday",
+    "date": "24 / 4 / 2026",
+    "scope": "global",
+    "sport": "darts",
+    "popularity": 6,
+    "image": "images/skysports-luke-littler-darts_7228864.jpg",
+    "contentFile": "data/article-content/littler-rotterdam-boos.txt"
+  },
+  {
+    "id": "chelsea-transfer-news",
+    "title": "Chelsea transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts",
+    "articleTitle": "",
+    "description": "",
+    "date": "",
+    "scope": "global",
+    "sport": "football",
+    "popularity": 5,
+    "image": "images/skysports-chelsea-latest-club_7135285.jpg",
+    "contentFile": "data/article-content/chelsea-transfer-news.txt"
+  },
+  {
+    "id": "chelsea-rosenior-next",
+    "title": "Chelsea: No shortlist and no No 1 candidate to replace sacked Liam Rosenior - what's next at Stamford Bridge?",
+    "articleTitle": "",
+    "description": "",
+    "date": "",
+    "scope": "global",
+    "sport": "football",
+    "popularity": 4,
+    "image": "images/skysports-chelsea-rosenior_7227471.jpg",
+    "contentFile": "data/article-content/chelsea-rosenior-next.txt"
+  },
+  {
+    "id": "lewis-usyk-successor",
+    "title": "Lewis: 'Great' champion Usyk a worthy successor",
+    "articleTitle": "",
+    "description": "",
+    "date": "",
+    "scope": "global",
+    "sport": "boxing",
+    "popularity": 3,
+    "image": "images/skysports-lennox-lewis-lewis_7228504.jpg",
+    "contentFile": "data/article-content/lewis-usyk-successor.txt"
+  },
+  {
+    "id": "millwall-premier-league-promotion",
+    "title": "Millwall in the Premier League? Five factors driving their promotion bid",
+    "articleTitle": "",
+    "description": "",
+    "date": "",
+    "scope": "local",
+    "sport": "football",
+    "popularity": 2,
+    "image": "images/skysports-efl-championship_7228114.jpg",
+    "contentFile": "data/article-content/millwall-premier-league-promotion.txt"
+  },
+  {
+    "id": "pl-fa-cup-predictions-wolves-spurs",
+    "title": "PL & FA Cup Predictions: Wolves to stamp Spurs' passport to the Championship",
+    "articleTitle": "",
+    "description": "",
+    "date": "",
+    "scope": "global",
+    "sport": "football",
+    "popularity": 1,
+    "image": "images/skysports-premier-league-premier-league-prediction_7223294.jpg",
+    "contentFile": "data/article-content/pl-fa-cup-predictions-wolves-spurs.txt"
+  }
+]
